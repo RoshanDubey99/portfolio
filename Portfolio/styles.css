@@ -1,0 +1,602 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+  /* Basic styling for header, main, and footer */
+  header, main, footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display:inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Styling for sections */
+  section {
+    padding: 50px 0;
+  }
+  
+  /* Basic styling for footer */
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  /* ... your existing CSS ... */
+
+/* Style for form */
+/* #contact {
+    text-align: center;
+  }
+  
+  #contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+   */
+   /* ... your existing CSS ... */
+
+.contact-form {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9; /* Background color */
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333; /* Heading color */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333; /* Label color */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Optional: Add hover effect for the submit button */
+button:hover {
+  background-color: #555;
+}
+
+
+/* Styling for footer
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .social-media {
+    margin-bottom: 20px;
+  }
+  
+  .social-media a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-media a img {
+    width: 30px; /* Adjust size as needed */
+    /* height: auto;
+  }
+   */ 
+   .wrapper .icon{
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    display: inline-block;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: #333;
+    text-decoration: none;
+  }
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    line-height: 1.5;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background-color: #3b5999;
+    color: #ffffff;
+  }
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background-color: #46c1f6;
+    color: #ffffff;
+  }
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background-color: #e1306c;
+    color: #ffffff;
+  }
+  .wrapper .github:hover,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip::before {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  .wrapper .youtube:hover,
+  .wrapper .youtube:hover .tooltip,
+  .wrapper .youtube:hover .tooltip::before {
+    background-color: #de463b;
+    color: #ffffff;
+  }
+  /* ... your existing CSS ... */
+
+#intro {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .photo-container {
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .photo-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Hover effect for the photo */
+  .photo-container:hover img {
+    transform: scale(1.1);
+  }
+/* ... your existing CSS ... */
+
+/* Navbar styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo img {
+    width: 150px; /* Adjust size as needed */
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .hamburger-menu {
+      display: flex;
+    }
+  
+    /* Other responsive styles */
+  }
+  /* ... your existing CSS ... */
+
+.logo {
+    background-color: #333; /* Set the navbar color */
+    padding: 10px; /* Adjust padding as needed */
+  }
+  
+  .logo img {
+    display: block;
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    background-color: #333; /* Match navbar color */
+    padding: 5px; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: add border-radius for a better match */
+  }
+ /* About section styling */
+
+.about-content {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9; /* Background color */
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333; /* Text color */
+}
+
+#about h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333; /* Heading color */
+}
+
+/* ... your existing CSS ... */
+
+#experience {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9; /* Background color */
+}
+
+#experience h2 {
+  background-color: #333; /* Background color for the heading */
+  color: #fff; /* Text color for the heading */
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px 8px 0 0; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  margin-top: 0; /* Remove default margin */
+}
+
+.experience-details h3 {
+  margin-top: 15px;
+  color: #333; /* Subheading color */
+}
+
+.experience-details p {
+  color: #555; /* Text color */
+}
+/* ... your existing CSS ... */
+
+.startup {
+  margin-top: 30px; /* Adjust spacing */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9; /* Background color */
+}
+
+.startup h3 {
+  color: #333; /* Subheading color */
+  margin-bottom: 10px;
+}
+
+.startup p {
+  color: #555; /* Text color */
+}
+
+.company-logo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.company-logo img {
+  max-width: 200px; /* Adjust the size of the logo */
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px; /* Rounded corners for the logo */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.company-logo a {
+  text-decoration: none;
+  color: #333; /* Link color */
+}
+
+.company-logo a:hover {
+  text-decoration: underline; /* Hover effect for the link */
+}
+
+
+/* Skills css */
+/* ... your existing CSS ... */
+
+.skills {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9; /* Background color */
+}
+
+.skills h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333; /* Heading color */
+}
+
+.technical-skills,
+.leadership-skills {
+  margin-bottom: 20px;
+}
+
+.technical-skills h4,
+.leadership-skills h4 {
+  margin-bottom: 10px;
+  color: #333; /* Subheading color */
+}
+
+.technical-skills ol,
+.leadership-skills li {
+  list-style:circle;
+  padding: 0;
+  margin: 0;
+  color: #555; /* Text color */
+}
+
+.technical-skills ol li {
+  margin-bottom: 5px;
+}
+
+/* Optional: Add hover effect for skills */
+.technical-skills ol li:hover,
+.leadership-skills p:hover {
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.academic-table {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9; /* Table background color */
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333; /* Heading color */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd; /* Table cell borders */
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #333; /* Header background color */
+  color: #fff; /* Header text color */
+}
+/* ... your existing CSS ... */
+
+.hobbies {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9; /* Background color for hobbies section */
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333; /* Heading color */
+}
+
+ul {
+  list-style:circle;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #555; /* Hobby text color */
+}
+
+/* Optional: Add some hover effect on hobbies */
+li:hover {
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+}
+    /* ... your existing CSS ... */
+
+.personal-statement {
+  text-align: center;
+  font-style: italic;
+  margin-top: 20px;
+  color: #555; /* Text color */
+}
+/* ... your existing CSS ... */
+
+#projects {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9; /* Background color */
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333; /* Heading color */
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  color: #333; /* Project title color */
+  margin-bottom: 5px;
+}
+
+.project p {
+  color: #555; /* Text color */
+}
+
+.project-links {
+  margin-top: 10px;
+}
+
+.project-links a {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333; /* Link color */
+}
+
+.project-links a:hover {
+  text-decoration: underline; /* Hover effect for links */
+}
