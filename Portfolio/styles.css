@@ -322,7 +322,7 @@ header {
   
   @media screen and (max-width: 768px) {
     .nav-links {
-      display: none;
+      display:list-item;
     }
   
     .hamburger-menu {

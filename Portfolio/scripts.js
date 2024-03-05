@@ -12,14 +12,14 @@ function typeText() {
 }
 
 // Call the function when the window loads
-window.onload = typeText;
+// window.onload = typeText;
 
-const hamburger = document.querySelector('.hamburger-menu');
-const navLinks = document.querySelector('.nav-links');
+// const hamburger = document.querySelector('.hamburger-menu');
+// const navLinks = document.querySelector('.nav-links');
 
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-});
+// hamburger.addEventListener('click', () => {
+//   navLinks.classList.toggle('open');
+// });
 
 
 // const hamburger = document.querySelector('.hamburger-menu');
