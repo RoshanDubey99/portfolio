@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funzone Gaming Arena</title>
+</head>
+<body>
+    <h1 ><a href="index.html">Welcome to Funzone Gaming Arena</a></h1>
+    <table border="5">
+        <tr>
+            <th>Name</th>
+            <th>Action</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td>Dice</td>
+            <td><img src="dice.gif" width="15%" onclick="Dice()"></td>
+            <td id="o1"></td>
+        </tr>
+        <tr>
+            <td>OTP</td>
+            <td><button onclick="Otp()">Generate</button></td>
+            <td id="o2"></td>
+        </tr>
+        <tr>
+            <td>Dish Predict</td>
+            <td><button onclick="Dish()">Predict</button></td>
+            <td id="o3"></td>
+        </tr>
+        <tr>
+            <td>Rock Paper Scissor</td>
+            <td>
+                <button onclick="rps(1)">Rock</button>
+                <button onclick="rps(2)">Paper</button>
+                <button onclick="rps(3)">Scissor</button>
+            </td>
+           <td id="o4"></td>
+        </tr>
+        <tr>
+            <td>Today's Quotes</td>
+            <td onclick="Quotes()"><button>Surprize Me</button></td>
+            <td id="o5"></td>
+        </tr>
+        <tr>
+            <td>Password Generator</td>
+            <td onclick="Password()"><button>Generate</button></td>
+            <td id="o6"></td>
+        </tr>
+    </table>
+    <script>
+        function Dice(){
+          let x= Math.floor(Math.random()*(6))+1
+          document.querySelector('#o1').innerHTML= `<img src='${x}.png' width='15%'>`
+        }
+        function Otp(){
+            let x = Math.floor(Math.random()*(999999-100000))+100000;
+            document.querySelector('#o2').innerText = x;
+        }
+        function Dish(){
+            let menu = ['Idli','Dhosa','Chole-Bhature','Methi-Paratha','Pasta','Dal-Makhni','Dhokla','Panner-Tikka','Chana-Jilebi','Puri-Subjee','Pani-Puri','Rajma-Chawal','Khadi-Chawal','Fried-Rice'];
+            let l = menu.length;
+            let x = Math.floor(Math.random()*l);
+            document.querySelector('#o3').innerText = menu[x];
+        }
+        function rps(user){
+                let comp = Math.floor(Math.random()*3)+1;
+                console.log(comp);
+                if(user==comp)
+                     document.querySelector('o4').innerText='Tie';
+                else if(user==1&&comp==2 || user==3 && comp == 1 || user == 2 && comp == 3)
+                     document.querySelector('#o4').innerText ='Computer Win'
+                 else
+                     document.querySelector('#o4').innerText = 'User Win';
+             }
+        function Quotes(){
+            collection = ['The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela','The way to get started is to quit talking and begin doing. -Walt Disney','The future belongs to those who believe in the beauty of their dreams. -Eleanor Roosevelt','If you set your goals ridiculously high and its a failure, you will fail above everyone else success. -James Cameron']
+            let l = collection.length;
+            let x = Math.floor(Math.random()*l);
+            document.querySelector('#o5').innerText = collection[x];
+        }
+        function Password(){
+            let d = Math.floor(Math.random()*(99-10)+1)+10;
+            let c1 = Math.floor(Math.random()*(122-97)+1)+97;
+            let c2 = Math.floor(Math.random()*(122-97+1))+97;
+            let c3 = Math.floor(Math.random()*(122-97+1))+97;
+            let s = Math.floor(Math.random()*(47-33+1))+33;
+            document.querySelector('#o6').innerText = String.fromCharCode(c1)+String.fromCharCode(s)+d+String.fromCharCode(c2)+String.fromCharCode(c3);
+        }
+    </script>
+</body>
+</html>
