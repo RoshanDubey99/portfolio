@@ -600,3 +600,16 @@ li:hover {
 .project-links a:hover {
   text-decoration: underline; /* Hover effect for links */
 }
+.container {
+  max-width: 800px; /* Adjust the value to your desired width */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+table {
+   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  table-layout: fixed;
+
+}

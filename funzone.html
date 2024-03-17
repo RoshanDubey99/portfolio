@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funzone Gaming Arena</title>
+    <link rel="stylesheet" href="/Portfolio/styles.css">
+    
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
 </head>
+  
 <body>
-    <h1 ><a href="index.html">Welcome to Funzone Gaming Arena</a></h1>
+    <header>
+        <nav>
+          <div class="logo">
+            <img src="Portfolio\Navimage.png" alt="Your Logo">
+          </div>
+          <div class="navbar-links">
+            <ul class="nav-links">
+              <!-- Your navigation links go here -->
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <!-- <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div> -->
+        </nav>
+      </header>
+    
+    <div class="container1">
+        <h1><center>Welcome to Funzone Gaming Arena</center></h1>
+    
     <table border="5">
         <tr>
             <th>Name</th>
@@ -48,6 +76,7 @@
             <td id="o6"></td>
         </tr>
     </table>
+    </div>
     <script>
         function Dice(){
           let x= Math.floor(Math.random()*(6))+1
@@ -89,4 +118,32 @@
         }
     </script>
 </body>
+<footer>
+       
+    <div class="wrapper">
+        <!-- <a href="#" class="icon facebook">
+          <div class="tooltip">Facebook</div>
+          <span><i class="fab fa-facebook-f"></i></span>
+        </a> -->
+        <a href="https://twitter.com/roshandubey99" class="icon twitter">
+          <div class="tooltip">Twitter</div>
+          <span><i class="fab fa-twitter"></i></span>
+        </a>
+        <a href="https://www.instagram.com/roshandubey99" class="icon instagram">
+          <div class="tooltip">Instagram</div>
+          <span><i class="fab fa-instagram"></i></span>
+        </a>
+        <a href="https://github.com/roshandubey99" class="icon github">
+          <div class="tooltip">Github</div>
+          <span><i class="fab fa-github"></i></span>
+        </a>
+        <a href="https://www.linkedin.com/in/roshandubey99" class="icon youtube">
+          <div class="tooltip"></div>
+          <span><i class="fab fa-linkedin"></i></span>
+        </a>
+      </div>
+    <p>&copy; 2023 Roshan Dubey</p>
+  </footer>
+  
+
 </html>
